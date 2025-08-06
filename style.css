@@ -1,10 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 30px;
-}
-form {
-  margin-bottom: 20px;
-}
-input, select {
-  margin: 5px 0;
+.question {
+  margin: 15px 0;
+  text-align: left;
 }
