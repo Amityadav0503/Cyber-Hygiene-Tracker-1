@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cyber Hygiene Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Hygiene AI Quiz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Cyber Hygiene Tracker</h1>
-  <form id="hygieneForm">
-    <label>Username: <input type="text" id="username" required></label><br>
-    <label>Last Password Change (days ago): <input type="number" id="passwordChange"></label><br>
-    <label>Two-Factor Auth Enabled:
-      <select id="twoFA">
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-    </label><br>
-    <button type="submit">Submit</button>
-  </form>
-  <div id="result"></div>
+  <div class="container">
+    <h1>🤖 Cyber Hygiene AI Quiz</h1>
+    <p class="typing" id="typingText">Hello, let’s assess your digital habits...</p>
+
+    <form id="quizForm">
+      <input type="text" id="username" placeholder="👤 Enter your name" required />
+
+      <div class="question">1. Do you use strong and unique passwords for each site?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">2. Do you change your passwords at least every 3 months?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">3. Is Two-Factor Authentication (2FA) enabled on your accounts?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">4. Do you regularly update your software and OS?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">5. Do you use antivirus/anti-malware software?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">6. Do you avoid public Wi-Fi without a VPN?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">7. Do you backup your important data regularly?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">8. Do you avoid clicking suspicious email links or attachments?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">9. Is your phone or laptop protected by a PIN/password/biometric?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <div class="question">10. Do you log out of sensitive accounts after use?
+        <select required><option value="">--</option><option value="1">Yes</option><option value="0">No</option></select>
+      </div>
+
+      <button type="submit">🚀 Analyze My Score</button>
+    </form>
+
+    <div class="result" id="resultBox"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
