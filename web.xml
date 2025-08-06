@@ -1,0 +1,10 @@
+<web-app>
+  <servlet>
+    <servlet-name>CyberHygiene</servlet-name>
+    <servlet-class>CyberHygieneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CyberHygiene</servlet-name>
+    <url-pattern>/submit</url-pattern>
+  </servlet-mapping>
+</web-app>
