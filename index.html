@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Hygiene Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cyber Hygiene Tracker</h1>
+  <form id="hygieneForm">
+    <label>Username: <input type="text" id="username" required></label><br>
+    <label>Last Password Change (days ago): <input type="number" id="passwordChange"></label><br>
+    <label>Two-Factor Auth Enabled:
+      <select id="twoFA">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
